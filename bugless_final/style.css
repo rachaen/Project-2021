@@ -56,6 +56,7 @@ p {
   background-color: #3040c4;
   width: 140px;
   height: 48px;
+  border: none; /* button에 border가 생겨서 추가 */
   border-radius: 2px;
   font-size: 15px;
   line-height: 1.6;
@@ -306,16 +307,18 @@ p {
 .subscription .input-group input:focus {
   border-color: rgba(1, 137, 209, 0.5);
 }
-
+/* 안 생기던 border가 생김 ㅠㅠ => 지금까지는 fill-button을 anchor한테 주었기 때문에 먹었는데 지금은 버튼에게 주었기 때문에 버튼의 기본 스타일인 border가 먹힌거임
+위에 fill-buttom에 border=none을 추가해주자! */
 .subscription-form .input-group .fill-button {
   width: 100%;
-  border: 1px solid #3040c4;
+  /* border: 1px solid #3040c4; */
 }
 
 .form-notice {
   font-size: 13px;
   color: #7b7b7e;
   line-height: 1.5384615385;
+  letter-spacing: 0;
 }
 
 .form-notice a {
@@ -325,10 +328,10 @@ p {
 
 /* Footer */
 .footer {
-  padding: 24px 15px;
+  padding: 24px 0;
 }
 
-.footer-links li {
+.footer-links {
   margin-bottom: 8px;
 }
 
@@ -454,13 +457,19 @@ p {
 
   .subscription {
     text-align: left;
+    padding: 80px 0;
+  }
+  .subscription-image {
+    padding: 8px 0;
   }
   .subscription-image img {
-    display: block;
+    /* display: block;
     height: auto;
     width: 100%;
     max-width: 287px;
-    margin-left: 0px;
+    margin-left: 0px; */
+    height: 285px;
+    margin-left: 0;
   }
   .subscription-title {
     font-size: 40px;
@@ -475,13 +484,22 @@ p {
 
   .subscription .input-group input {
     height: 56px;
-    width: 362px;
     margin-right: 8px;
     margin-bottom: 0;
     font-size: 18px;
+    line-height: 1.3333333333;
   }
   .subscription .input-group .fill-button {
+    /* flex-grow: 남은 공간에 다 차지하는 것
+    flex-shrink: input은 사이즈가 줄어들어도 괜찮은데 button은 안돼
+    양의 정수를 주면 줄여들어도 괜찮은 것 0을 주면 절대로 자기 사이즈보다 줄어들면 안 된다는 것*/
+    flex-shrink: 0; /* 항상 160px을 유지할 수 있도록 */
     width: 160px;
+  }
+
+  .form-notice {
+    font-size: 14px;
+    line-height: 1.7142857143;
   }
   /* Footer */
   .footer {
