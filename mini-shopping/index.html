@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mini-shopping</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="src/main.js" defer></script>
   </head>
   <body>
     <div class="shopping-mall">
@@ -17,36 +18,67 @@
         <ul class="shopping-menu">
           <li class="shopping-menu-item">
             <button href="#">
-              <img src="./img/blue_t.png" alt="T-shirt" />
+              <img
+                src="./img/blue_t.png"
+                alt="T-shirt"
+                data-key="type"
+                data-value="tshirt"
+              />
             </button>
           </li>
           <li class="shopping-menu-item">
             <button href="#">
-              <img src="./img/blue_p.png" alt="Pants" />
+              <img
+                src="./img/blue_p.png"
+                alt="Pants"
+                data-key="type"
+                data-value="pants"
+              />
             </button>
           </li>
           <li class="shopping-menu-item">
             <button href="#">
-              <img src="./img/blue_s.png" alt="Skirt" />
+              <img
+                src="./img/blue_s.png"
+                alt="Skirt"
+                data-key="type"
+                data-value="skirt"
+              />
             </button>
           </li>
           <li class="shopping-menu-item">
-            <button href="#" class="colorbutton blue-button">Blue</button>
+            <button
+              href="#"
+              class="colorbutton blue-button"
+              data-key="color"
+              data-value="blue"
+            >
+              Blue
+            </button>
           </li>
           <li class="shopping-menu-item">
-            <button href="#" class="colorbutton yellow-button">Yellow</button>
+            <button
+              href="#"
+              class="colorbutton yellow-button"
+              data-key="color"
+              data-value="yellow"
+            >
+              Yellow
+            </button>
           </li>
           <li class="shopping-menu-item">
-            <button href="#" class="colorbutton pink-button">Pink</button>
+            <button
+              href="#"
+              class="colorbutton pink-button"
+              data-key="color"
+              data-value="pink"
+            >
+              Pink
+            </button>
           </li>
         </ul>
       </nav>
-      <ul class="shopping-items">
-        <li class="shopping-item">
-          <img src="./img/blue_p.png" alt="T-shirt" class="item-image" />
-          <span class="item-desc">male, large</span>
-        </li>
-      </ul>
+      <ul class="shopping-items"></ul>
     </div>
   </body>
 </html>
