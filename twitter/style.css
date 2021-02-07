@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --color-twitter: #1da1f2;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Ubuntu, 'Helvetica Neue', sans-serif;
+  text-align: center;
+}
+
+.range_check {
+  background-color: lightcoral;
+}
+/* Reset CSS*/
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Ubuntu, 'Helvetica Neue', sans-serif;
+  border: none;
+  background: inherit;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  outline: none;
+  box-shadow: none;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.header {
+  position: relative;
+  position: fixed;
+  height: 100vh;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: conter;
+  width: 47px;
+  height: 47px;
+}
+
+.logo img {
+  display: block;
+  width: auto;
+  height: 30px;
+}
+
+.logo:hover,
+.nav_item:hover {
+  cursor: pointer;
+}
+
+.logo:hover > .left_side_button,
+.nav_item:hover > .left_side_button {
+  background-color: rgba(29, 161, 242, 0.1);
+  border-radius: 100px;
+  color: rgba(29, 161, 242, 1);
+  transition-duration: 0.2s;
+}
+
+.nav_item {
+  display: flex;
+  align-items: center;
+  margin: 2px 0;
+}
+
+.nav_menu {
+  margin-bottom: 10px;
+}
+
+.left_side_button {
+  height: 46.25px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.nav_item a {
+  font-size: 19px;
+  font-weight: 700;
+  margin-right: 30px;
+}
+
+.nav_item_image {
+  width: 36px;
+  height: 36px;
+  margin-right: 8px;
+  /* width: 21px;
+  height: 21px;
+  margin: 7.5px 8px 7.5px 5px; */
+  display: flex;
+  align-items: center;
+}
+
+.nav_item_image img {
+  display: block;
+  height: auto;
+  width: 21px;
+}
+
+.profile_img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url(./img/chaeeun.JPG);
+  background-size: 100% auto;
+  margin-right: 11px;
+}
+
+.left_side_tweet {
+  height: 50px;
+  width: 200px;
+  font-size: 15px;
+  color: #fff;
+  background-color: #1da1f2;
+  border-radius: 100px;
+  font-weight: 700;
+}
+
+.left_side_tweet:hover {
+  background-color: rgba(25, 138, 209, 1);
+  transition-duration: 0.2s;
+  box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
+}
+
+.profile {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.profile:hover > .profile_button {
+  background-color: rgba(29, 161, 242, 0.1);
+  border-radius: 100px;
+  transition-duration: 0.2s;
+}
+
+.profile_button {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.more_button {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  right: 10px;
+}
+
+.profile_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.id {
+  color: #6e767d;
+  font-size: 15px;
+}
