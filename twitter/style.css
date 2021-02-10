@@ -53,7 +53,7 @@ li {
   margin-left: 0;
 }
 
-.header {
+.left_side header {
   position: relative;
   position: fixed;
   height: 100vh;
@@ -89,7 +89,7 @@ li {
 .nav_item {
   display: flex;
   align-items: center;
-  margin: 2px 0;
+  margin: 4px 0;
 }
 
 .nav_menu {
@@ -98,32 +98,26 @@ li {
 
 .left_side_button {
   height: 46.25px;
-  display: flex;
-  align-items: center;
   padding: 10px;
 }
 
+.nav_item_image {
+  margin-right: 16px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
 .nav_item a {
   font-size: 19px;
   font-weight: 700;
   margin-right: 30px;
-}
-
-.nav_item_image {
-  width: 36px;
-  height: 36px;
-  margin-right: 8px;
-  /* width: 21px;
-  height: 21px;
-  margin: 7.5px 8px 7.5px 5px; */
   display: flex;
   align-items: center;
 }
 
-.nav_item_image img {
-  display: block;
-  height: auto;
-  width: 21px;
+.nav_item img {
+  width: 26.25px;
+  height: 26.25px;
 }
 
 .profile_img {
