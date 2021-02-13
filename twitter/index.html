@@ -134,58 +134,87 @@
             </div>
           </header>
         </div>
-        <div class="col-6">
+        <div class="col-6 main">
           <div class="row">
-            <header>
-              <h1>Home</h1>
+            <header class="main_header">
+              <button class="main_home">Home</button>
               <button>
-                <div>
-                  <img src="./img/clean" alt="top tweets" />
+                <div class="toptweets">
+                  <img src="./img/clean.svg" alt="top tweets" />
                 </div>
               </button>
             </header>
           </div>
 
-          <div class="row">
+          <div class="row tweet">
             <a href="#">
               <div class="profile_img"></div>
             </a>
-            <form action="#" method="POST">
+            <form action="#" method="POST" class="tweet_form">
               <textarea
                 placeholder="What's happening?"
                 maxlength="280"
+                class="tweet_message"
               ></textarea>
               <button type="button" aria-label="Every one can reply">
                 Every one can reply
               </button>
-              <button type="button" aria-label="Upload files">
-                <div>
-                  <img src="./img/twitter-image.svg" alt="image" />
+              <div class="tweet_form_bottom">
+                <div class="tweet_form_imgs">
+                  <label
+                    for="file-input"
+                    type="button"
+                    aria-label="Upload files"
+                    class="form_image"
+                  >
+                    <img src="./img/twitter-image.svg" alt="image" />
+                  </label>
+                  <input
+                    id="file-input"
+                    type="file"
+                    multiple
+                    accept="image/*, video/*"
+                  />
+                  <button
+                    type="button"
+                    aria-label="Search GIFs..."
+                    class="form_gif"
+                  >
+                    <div>
+                      <img src="./img/twitter-gif.svg" alt="gif" />
+                    </div>
+                  </button>
+                  <button
+                    type="button"
+                    aria-label="Create a poll"
+                    class="form_align"
+                  >
+                    <div>
+                      <img src="./img/twitter-align.svg" alt="align" />
+                    </div>
+                  </button>
+                  <button
+                    type="button"
+                    aria-label="Choose emoji"
+                    class="form_emoji"
+                  >
+                    <div>
+                      <img src="./img/smile.svg" alt="emoji" />
+                    </div>
+                  </button>
+                  <strong aria-label="0 out of 280 characters"> </strong>
+                  <button
+                    type="button"
+                    aria-label="Add another tweet"
+                    class="form_schedule"
+                  >
+                    <div>
+                      <img src="./img/event.svg" alt="schedule" />
+                    </div>
+                  </button>
                 </div>
-              </button>
-              <input type="file" multiple accept="image/*, video/*" />
-              <button type="button" aria-label="Search GIFs...">
-                <div>
-                  <img src="./img/twitter-gif.svg" alt="gif" />
-                </div>
-              </button>
-              <button type="button" aria-label="Create a poll">
-                <div>
-                  <img src="./img/twitter-align.svg" alt="align" />
-                </div>
-              </button>
-              <button type="button" aria-label="Choose emoji">
-                <div>
-                  <img src="./img/smile.svg" alt="emoji" />
-                </div>
-              </button>
-              <strong aria-label="0 out of 280 characters"> </strong>
-              <button type="button" aria-label="Add another tweet">
-                <div>
-                  <img src="./img/event.svg" alt="" />
-                </div>
-              </button>
-              <button type="submit">Tweet</button>
+                <button type="submit" class="tweet_submit">Tweet</button>
+              </div>
             </form>
           </div>
 
