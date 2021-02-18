@@ -262,33 +262,44 @@
                           </button>
                         </div>
                         <p>매생이 전복죽</p>
-                        <footer>
-                          <button type="button">
-                            <img
-                              src="./img/twitter-reply-outline.svg"
-                              alt="reply"
-                            />
+                        <footer class="tweet_bottom_btns">
+                          <button type="button" class="reply_btn bottom_btn">
+                            <div class="reply_btn_img bottom_btn_img">
+                              <img
+                                src="./img/twitter-reply-outline.svg"
+                                alt="reply"
+                              />
+                            </div>
                             <span class="sr-only">Tweet your reply</span>
                             <strong aria-label="3 replied">3</strong>
                           </button>
-                          <button type="button">
-                            <img src="./img/twitter-retweet.svg" alt="reply" />
+                          <button type="button" class="retweet_btn bottom_btn">
+                            <div class="retweet_btn_img bottom_btn_img">
+                              <img
+                                src="./img/twitter-retweet.svg"
+                                alt="retweet"
+                              />
+                            </div>
                             <span class="sr-only">Retweet</span>
                             <strong aria-label="3 retweeted">3</strong>
                           </button>
-                          <button type="button">
-                            <img
-                              src="./img/twitter-like-outline.svg"
-                              alt="reply"
-                            />
+                          <button type="button" class="like_btn bottom_btn">
+                            <div class="like_btn_img bottom_btn_img">
+                              <img
+                                src="./img/twitter-like-outline.svg"
+                                alt="reply"
+                              />
+                            </div>
                             <span class="sr-only">Like this tweet</span>
                             <strong aria-label="100 liked">100</strong>
                           </button>
-                          <button type="button" class="upload_btn">
-                            <img src="./img/upload.svg" alt="upload" />
-                            <span class="sr-only">Upload</span>
+                          <button type="button" class="share_btn bottom_btn">
+                            <div class="share_btn_img bottom_btn_img">
+                              <img src="./img/upload.svg" alt="share" />
+                            </div>
+                            <span class="sr-only">share</span>
                           </button>
-                          <div>
+                          <div style="display: none">
                             <button type="button">
                               Send via Direct Message
                             </button>
