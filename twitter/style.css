@@ -303,6 +303,7 @@ dt {
   padding-top: 10px;
 }
 .timeline_tweet {
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -315,8 +316,8 @@ dt {
 
 .tweet_content {
   width: 100%;
-  position: relative;
   display: flex;
+  margin-bottom: 5px;
 }
 
 .tweet_img {
@@ -356,13 +357,80 @@ dt {
   position: absolute;
   right: 10px;
 }
+
+.tweet_more_button img {
+  height: 18.75px;
+  width: 18.75px;
+}
+
+.tweet_more_button:hover {
+  background-color: rgba(29, 161, 242, 0.1);
+  border-radius: 100px;
+  color: rgba(29, 161, 242, 1);
+  transition-duration: 0.2s;
+}
 .tweet_more_button img {
   width: 18.5px;
   height: 18.5px;
   right: 10px;
 }
 
-.upload_btn img {
+.tweet_bottom_btns {
+  width: 425px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.bottom_btn {
+  display: flex;
+  padding: 0px;
+  align-items: center;
+}
+
+.bottom_btn strong {
+  font-size: 400;
+}
+
+.tweet_bottom_btns strong {
+  padding: 0px 10px;
+}
+
+.bottom_btn_img {
+  width: 34.75px;
+  height: 34.75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom_btn img {
   width: 18.75px;
   height: 18.75px;
+}
+
+.bottom_btn:hover > .bottom_btn_img {
+  background-color: rgba(29, 161, 242, 0.1);
+  border-radius: 100px;
+  transition-duration: 0.2s;
+}
+
+.retweet_btn:hover > .retweet_btn_img {
+  background-color: rgba(29, 191, 99, 0.1);
+}
+
+.like_btn:hover > .like_btn_img {
+  background-color: rgba(224, 36, 94, 0.1);
+}
+
+.bottom_btn:hover > .bottom_btn strong {
+  color: rgba(29, 161, 242, 1);
+}
+
+.retweet_btn:hover > .retweet_btn strong {
+  color: rgba(29, 191, 99, 1);
+}
+
+.like_btn:hover > .like_btn sgrong {
+  color: rgba(224, 36, 94, 1);
 }
