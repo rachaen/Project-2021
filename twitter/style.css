@@ -15,10 +15,6 @@ body {
   height: 100%;
 }
 
-input {
-  display: none;
-}
-
 .range_check {
   background-color: lightcoral;
 }
@@ -276,6 +272,10 @@ dt {
   height: 19.5px;
   display: inline-block;
 }
+
+.tweet_form_imgs input {
+  display: none;
+}
 .tweet_form_imgs img,
 .tweet_form_imgs label {
   width: 24px;
@@ -433,4 +433,33 @@ dt {
 
 .like_btn:hover > .like_btn sgrong {
   color: rgba(224, 36, 94, 1);
+}
+
+/* aside */
+.twitter_search {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #e7ecf0;
+  border-radius: 40px;
+}
+
+.search_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 38px;
+}
+
+.search_img img {
+  width: 15.43px;
+  height: 15.43px;
+}
+
+.twitter_search input {
+  padding: 10px;
+  width: 100%;
+  font-size: 15px;
 }
