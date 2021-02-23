@@ -312,93 +312,110 @@
         </div>
         <div class="col-3">
           <div class="row">
-            <div class="col-12 twitter_search">
-              <div class="search_img">
-                <img src="./img/twitter-search.svg" alt="search" />
+            <div class="col-12">
+              <div class="twitter_search">
+                <div class="search_img">
+                  <img src="./img/twitter-search.svg" alt="search" />
+                </div>
+                <input
+                  type="text"
+                  name="Search query"
+                  placeholder="Search Twitter"
+                />
               </div>
-              <input
-                type="text"
-                name="Search query"
-                placeholder="Search Twitter"
-              />
+            </div>
+            <div class="col-12">
+              <div class="trends">
+                <header class="trends_header">
+                  <h1 class="aside_h1">Trends</h1>
+                  <button
+                    type="button"
+                    aria-label="Options"
+                    class="trends_option"
+                  >
+                    <img src="./img/twitter-settings.svg" alt="" />
+                  </button>
+                </header>
+                <ol class="trends_list">
+                  <li>
+                    <a href="#">
+                      <span class="rank">1 · Trending</span>
+                      <strong lang="ko" class="keyword">#1위</strong>
+                      <span class="numOfTweets">100K Tweets</span>
+                    </a>
+                    <button
+                      type="button"
+                      aria-label="Options"
+                      class="trend_more_btn"
+                    >
+                      <img src="./img/more2.svg" alt="more" />
+                    </button>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="rank">2 · Trending</span>
+                      <strong lang="ko" class="keyword">#2위</strong>
+                      <span class="numOfTweets">100K Tweets</span>
+                    </a>
+                    <button
+                      type="button"
+                      aria-label="Options"
+                      class="trend_more_btn"
+                    >
+                      <img src="./img/more2.svg" alt="more" />
+                    </button>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="rank">3 · Trending</span>
+                      <strong lang="ko" class="keyword">#3위</strong>
+                      <span class="numOfTweets">100K Tweets</span>
+                    </a>
+                    <button
+                      type="button"
+                      aria-label="Options"
+                      class="trend_more_btn"
+                    >
+                      <img src="./img/more2.svg" alt="more" />
+                    </button>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="rank">4 · Trending</span>
+                      <strong lang="ko" class="keyword">#4위</strong>
+                      <span class="numOfTweets">100K Tweets</span>
+                    </a>
+                    <button
+                      type="button"
+                      aria-label="Options"
+                      class="trend_more_btn"
+                    >
+                      <img src="./img/more2.svg" alt="more" />
+                    </button>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="rank">5 · Trending</span>
+                      <strong lang="ko" class="keyword">#5위</strong>
+                      <span class="numOfTweets">100K Tweets</span>
+                    </a>
+                    <button
+                      type="button"
+                      aria-label="Options"
+                      class="trend_more_btn"
+                    >
+                      <img src="./img/more2.svg" alt="more" />
+                    </button>
+                  </li>
+                </ol>
+                <footer>
+                  <button type="button">Show more</button>
+                </footer>
+              </div>
             </div>
             <div class="col-12">
               <header>
-                <h1>Trends</h1>
-                <button type="button" aria-label="Options">
-                  <img src="./img/twitter-settings.svg" alt="" />
-                </button>
-              </header>
-
-              <ol>
-                <li>
-                  <button type="button" aria-label="Options">
-                    <div class="more_img">
-                      <img src="./img/more.svg" alt="more" />
-                    </div>
-                  </button>
-                  <a href="#">
-                    <span>1 · Trending</span>
-                    <strong lang="ko">#1위</strong>
-                    <span>100K Tweets</span>
-                  </a>
-                </li>
-                <li>
-                  <button type="button" aria-label="Options">
-                    <div class="more_img">
-                      <img src="./img/more.svg" alt="more" />
-                    </div>
-                  </button>
-                  <a href="#">
-                    <span>2 · Trending</span>
-                    <strong lang="ko">#2위</strong>
-                    <span>100K Tweets</span>
-                  </a>
-                </li>
-                <li>
-                  <button type="button" aria-label="Options">
-                    <div class="more_img">
-                      <img src="./img/more.svg" alt="more" />
-                    </div>
-                  </button>
-                  <a href="#">
-                    <span>3 · Trending</span>
-                    <strong lang="ko">#3위</strong>
-                    <span>100K Tweets</span>
-                  </a>
-                </li>
-                <li>
-                  <button type="button" aria-label="Options">
-                    <div class="more_img">
-                      <img src="./img/more.svg" alt="more" />
-                    </div>
-                  </button>
-                  <a href="#">
-                    <span>4 · Trending</span>
-                    <strong lang="ko">#4위</strong>
-                    <span>100K Tweets</span>
-                  </a>
-                </li>
-                <li>
-                  <button type="button" aria-label="Options">
-                    <div class="more_img">
-                      <img src="./img/more.svg" alt="more" />
-                    </div>
-                  </button>
-                  <a href="#">
-                    <span>5 · Trending</span>
-                    <strong lang="ko">#5위</strong>
-                    <span>100K Tweets</span>
-                  </a>
-                </li>
-              </ol>
-              <footer>
-                <button type="button">Show more</button>
-              </footer>
-            </div>
-            <div class="col-12">
-              <header>
-                <h1>Who to follow</h1>
+                <h1 class="aside_h1">Who to follow</h1>
                 <button type="button" aria-label="Options">
                   <img src="./img/twitter-settings.svg" alt="" />
                 </button>
