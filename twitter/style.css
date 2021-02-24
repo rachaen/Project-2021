@@ -443,6 +443,7 @@ dt {
   align-items: center;
   background-color: #e7ecf0;
   border-radius: 40px;
+  margin-bottom: 24px;
 }
 
 .search_img {
@@ -462,4 +463,71 @@ dt {
   padding: 10px;
   width: 100%;
   font-size: 15px;
+}
+
+.trends {
+  background-color: #f6f8fa;
+  border-radius: 14px;
+}
+
+.trends_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aside_h1 {
+  font-size: 19px;
+  font-weight: 700;
+  padding: 15px;
+}
+
+.trends_list li {
+  padding: 16px;
+  padding-left: 9px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trends_list a {
+  display: flex;
+  flex-direction: column;
+}
+.trends_option {
+  width: 22.5px;
+  height: 22.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trends_option img {
+  width: 19.45px;
+  height: 19.45px;
+}
+
+.trend_more_btn {
+  width: 34.75px;
+  height: 34.75px;
+}
+.trend_more_btn img {
+  width: 18.75px;
+  height: 18.75px;
+}
+
+.rank {
+  font-size: 12px;
+  color: #828282;
+  margin-bottom: 4px;
+}
+
+.keyword {
+  color: #0f1419;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.numOfTweets {
+  font-size: 14px;
+  color: #828282;
 }
