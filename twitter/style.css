@@ -531,3 +531,9 @@ dt {
   font-size: 14px;
   color: #828282;
 }
+
+.showmore button {
+  font-size: 15px;
+  color: #1da1f2;
+  padding: 15px;
+}
