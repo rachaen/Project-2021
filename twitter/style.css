@@ -468,6 +468,7 @@ dt {
 .trends {
   background-color: #f6f8fa;
   border-radius: 14px;
+  margin-bottom: 16px;
 }
 
 .trends_header {
@@ -478,7 +479,7 @@ dt {
 
 .aside_h1 {
   font-size: 19px;
-  font-weight: 700;
+  font-weight: 800;
   padding: 15px;
 }
 
@@ -536,4 +537,69 @@ dt {
   font-size: 15px;
   color: #1da1f2;
   padding: 15px;
+}
+
+.follow {
+  background-color: #f6f8fa;
+  border-radius: 14px;
+}
+
+.follow header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.follow_option {
+  width: 22.5px;
+  height: 22.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.follow_option img {
+  width: 19.45px;
+  height: 19.45px;
+}
+
+.follow_account {
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.follow_account a {
+  display: flex;
+}
+
+.follow_img {
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  background-image: url(./img/chaeeun.JPG);
+  background-size: 100% auto;
+  margin-right: 10px;
+}
+.user_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user_info {
+  font-size: 15px;
+}
+
+.user_info span {
+  color: #828282;
+}
+
+.follow_account button {
+  border: 1px solid #1da1f2;
+  border-radius: 60px;
+  color: #1da1f2;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 0 15px;
 }
