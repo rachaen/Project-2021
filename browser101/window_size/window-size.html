@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>window-size</title>
+  </head>
+  <style>
+      .text {
+          font-family: sans-serif;
+          background-color: pink;
+          display: inline-block;
+          padding: 10px;
+          border-radius: 10px;
+      }
+  </style>
+
+  <body>
+    <div class="text">
+      <span>window.screen:</span>
+      <span id="screen_height"></span>,
+      <span id="screen_width"></span>
+    </br>
+      <span>window.outer:</span>
+      <span id="outer_height"></span>,
+      <span id="outer_width"></span>
+    </br>
+      <span>window.inner:</span>
+      <span id="inner_height"></span>,
+      <span id="inner_width"></span>
+    </br>
+      <span>documentElement.clientWidth:</span>
+      <span id="documentElement_height"></span>,
+      <span id="documentElement_width"></span>
+    </div>
+
+    <script>
+        window.addEventListener('resize', txtChange);
+        function txtChange() {
+            document.getElementById('screen_height').innerHTML = screen.height;
+            document.getElementById('screen_width').innerHTML = screen.width;
+            document.getElementById('outer_height').innerHTML = window.outerHeight;
+            document.getElementById('outer_width').innerHTML = window.outerWidth;
+            document.getElementById('inner_height').innerHTML = innerHeight;
+            document.getElementById('inner_width').innerHTML = innerWidth;
+            document.getElementById('documentElement_height').innerHTML = document.documentElement.clientHeight;
+            document.getElementById('documentElement_width').innerHTML = document.documentElement.clientWidth;
+        }
+        
+        
+      </script>
+  </body>
+</html>
