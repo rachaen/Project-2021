@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coordinates</title>
+  </head>
+  <style>
+    div {
+      height: 200px;
+      width: auto;
+      border: solid 3px pink;
+      background-color: black;
+    }
+
+    .special {
+      background-color: yellow;
+    }
+    .special:hover {
+      cursor: pointer;
+    }
+  </style>
+
+  <body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="special" onclick="getCoords(event)"></div>
+    <div></div>
+  </body>
+
+  <script>
+    const text = document.querySelector('.special');
+    function getCoords(event) {
+      console.log(text.getBoundingClientRect());
+      console.log(`client: ${event.clientX}, ${event.clientY}`);
+      console.log(`page: ${event.pageX}, ${event.pageY}`);
+    }
+  </script>
+</html>
