@@ -9,11 +9,15 @@
   <style>
     div {
       height: 200px;
-      width: auto;
+      width: 200px;
       border: solid 3px pink;
       background-color: black;
     }
-
+    aside {
+      position: fixed;
+      top: 0;
+      right: 0;
+    }
     .special {
       background-color: yellow;
     }
@@ -23,6 +27,12 @@
   </style>
 
   <body>
+    <aside>
+      <button class="scr_by">Scroll by 100px(y)</button>
+      <button class="scr_to">Scroll to 100px(y)</button>
+      <button class="scr_into">Scroll into special</button>
+    </aside>
+
     <div></div>
     <div></div>
     <div></div>
@@ -30,14 +40,33 @@
     <div></div>
     <div class="special" onclick="getCoords(event)"></div>
     <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
   </body>
 
   <script>
-    const text = document.querySelector('.special');
+    const scr_by = document.querySelector('.scr_by');
+    const scr_to = document.querySelector('.scr_to');
+    const scr_into = document.querySelector('.scr_into');
+    const special = document.querySelector('.special');
+    const special_top = document.querySelector('.special').offsetTop;
     function getCoords(event) {
-      console.log(text.getBoundingClientRect());
+      console.log(special.getBoundingClientRect());
       console.log(`client: ${event.clientX}, ${event.clientY}`);
       console.log(`page: ${event.pageX}, ${event.pageY}`);
     }
+
+    scr_by.addEventListener('click', (event) => {
+      window.scrollBy(0, 100);
+    });
+    scr_to.addEventListener('click', (event) => {
+      window.scrollTo(0, 100);
+    });
+    scr_into.addEventListener('click', (event) => {
+      window.scrollTo(0, special_top);
+    });
   </script>
 </html>
