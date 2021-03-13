@@ -1,0 +1,28 @@
+body {
+  background-color: black;
+}
+div {
+  background-color: #fff;
+}
+
+.target {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.coordinates {
+  position: absolute;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
+.vertical {
+  position: absolute;
+  height: 100%;
+  width: 2px;
+}
+.horizontal {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+}
