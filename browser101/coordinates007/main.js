@@ -3,15 +3,20 @@ const vertical = document.querySelector('.vertical');
 const horizontal = document.querySelector('.horizontal');
 const target = document.querySelector('.target');
 
+const targetRect = target.getBoundingClientRect();
+const targetHalfWidth = targetRect.width / 2;
+const targetHalfHeight = targetRect.height / 2;
+
 window.addEventListener('mousemove', (event) => {
+  const x = event.clientX;
+  const y = event.clientY;
   coordinates.innerHTML = `
-    ${event.clientX}px, ${event.clientY}px
+    ${x}px, ${y}px
     `;
-  coordinates.style.left = event.clientX + 30 + 'px';
-  coordinates.style.top = event.clientY + 30 + 'px';
-  target.style.left = event.clientX + 'px';
-  target.style.top = event.clientY + 'px';
-  vertical.style.left = event.clientX + 'px';
-  horizontal.style.top = event.clientY + 'px';
-  coordinates;
+  coordinates.style.transform = `translate(${x}px, ${y}px)`;
+  target.style.transform = `translate(${x - targetHalfWidth}px, ${
+    y - targetHalfHeight
+  }px)`;
+  vertical.style.transform = `translateX(${x}px)`;
+  horizontal.style.transform = `translateY(${y}px)`;
 });
