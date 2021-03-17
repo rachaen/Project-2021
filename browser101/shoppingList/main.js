@@ -2,6 +2,7 @@ addEventListener('load', () => {
   const item_input = document.querySelector('.item_input');
   const items = document.querySelector('.items');
   const item_plus = document.querySelector('.item_plus');
+
   item_input.addEventListener('keydown', (event) => {
     if (window.event.keyCode == 13) {
       addItem();
@@ -47,6 +48,7 @@ addEventListener('load', () => {
     plus_delete.addEventListener('click', (event) => {
       deleteLi(event.target);
     });
+    items.scrollTop = items.scrollHeight;
 
     item_input.value = '';
   }
