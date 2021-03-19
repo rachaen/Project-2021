@@ -14,8 +14,8 @@ addEventListener('load', () => {
   });
 
   function deleteLi(child) {
-    let grandgrandparent = child.parentNode.parentNode.parentNode;
-    grandgrandparent.parentNode.removeChild(grandgrandparent);
+    let grandparent = child.parentNode.parentNode;
+    grandparent.parentNode.removeChild(grandparent);
   }
 
   function addItem() {
@@ -46,7 +46,7 @@ addEventListener('load', () => {
     items.appendChild(pluslist);
 
     plus_delete.addEventListener('click', (event) => {
-      deleteLi(event.target);
+      deleteLi(event.currentTarget);
     });
     items.scrollTop = items.scrollHeight;
 
